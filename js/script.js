@@ -64,4 +64,5 @@ function generateGrid(numbersOfSquare, difficulty) {
 //add the class active on click for the grid elements
 function addActiveClass(){
     this.classList.toggle("active")
+    console.log(this.innerHTML);
 }
