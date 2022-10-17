@@ -60,3 +60,7 @@ header .play button{
     justify-content: center;
     align-items: center;
 }
+
+.active{
+    background-color: aqua;
+}

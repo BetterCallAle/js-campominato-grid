@@ -10,6 +10,7 @@ playBtn.addEventListener("click", function(){
         
         const square = createElement("square");
         square.innerHTML = i
+        square.addEventListener("click", addActiveClass)
         gridWrapper.append(square)
     }
 })
@@ -28,4 +29,8 @@ function createElement(className) {
     const elementCreated = document.createElement("div")
     elementCreated.classList.add(className)
     return elementCreated
+}
+
+function addActiveClass(){
+    this.classList.toggle("active")
 }
