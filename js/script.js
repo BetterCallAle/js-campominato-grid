@@ -5,26 +5,27 @@ const options = extractElements("difficulty")
 //add event click to button
 playBtn.addEventListener("click", function(){
 
+    //clean the gridWrapper in case of multiple click on play
     gridWrapper.innerHTML = ""
 
+    //export the user choice on select element
     const userChoice = options.value
-    console.log(userChoice);
 
-    let squareNumbers = 0
-    let userDifficulty = ""
-    
-    if(userChoice === "easy"){
-        squareNumbers = 100;
-        userDifficulty = "easy"
-    } else if (userChoice === "medium"){
+    //add some condition for the game difficulty
+    let squareNumbers = 100;
+    let userDifficulty = "easy";
+
+    if (userChoice === "medium"){
         squareNumbers = 81;
-        userDifficulty = "medium"
-    } else {
+        userDifficulty = "medium";
+    } else if (userChoice === "hard"){
         squareNumbers = 49;
-        userDifficulty = "hard"
+        userDifficulty = "hard";
     }
 
-    generateGrid(squareNumbers, userDifficulty)
+    //create the squares whit number inside the gridWrapper
+    generateGrid(squareNumbers, userDifficulty);
+
 })
 
 
