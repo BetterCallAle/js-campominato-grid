@@ -4,3 +4,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+img{
+    max-width: 100%;
+}
+
+/* HEADER */
+header{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 10%;
+    vertical-align: middle;
+}
+
+header .logo h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .play button{
+    font-size: 1rem;
+    padding: 0.2rem 2rem;
+}
+
+/* MAIN */
+
+.container{
+    width: 100%;
+    height: calc(100vh - 106.08px);
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.grid-wrapper{
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
