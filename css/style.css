@@ -6,12 +6,13 @@
 }
 
 /* COMMON */
-img{
-    max-width: 100%;
+html{
+    font-family: sans-serif;
 }
 
 /* HEADER */
 header{
+    height: 100px;
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ header{
 }
 
 header img{
-    width: 10%;
+    width: 5%;
     vertical-align: middle;
 }
 
@@ -28,26 +29,31 @@ header .logo h1{
     vertical-align: middle;
 }
 
+header .play{
+    width: 30%;
+    text-align: center;
+}
+
 header .play button{
-    font-size: 1rem;
-    padding: 0.2rem 2rem;
+    font-size: .8rem;
+    padding: 0 2rem;
+    margin-left: 1rem;
 }
 
 /* MAIN */
 
 .container{
     width: 100%;
-    height: calc(100vh - 106.08px);
+    height: calc(100vh - 100px - 50px);
     display: flex;
     align-items: center;
     background-color: aquamarine;
 }
 
 .grid-wrapper{
-    width: 550px;
-    height: 550px;
+    width: 700px;
+    height: 700px;
     margin: 0 auto;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
 }
@@ -77,4 +83,10 @@ header .play button{
 
 .active{
     background-color: aqua;
+}
+
+/* FOOTER */
+footer{
+    height: 50px;
+    padding: 1rem;
 }
